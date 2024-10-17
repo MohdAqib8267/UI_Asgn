@@ -17,7 +17,7 @@
                   <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">TrainVoyage</span>
               </a>
               <div class="flex items-center lg:order-2">
-                  <a href="#" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Log in</a>
+                  <a href="login.html" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Log Out</a>
                   <a href="#" class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800">Get started</a>
                   <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
                       <span class="sr-only">Open main menu</span>
@@ -31,20 +31,12 @@
                           <a href="#" class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white" aria-current="page">Home</a>
                       </li>
                       <li>
-                          <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Company</a>
-                      </li>
-                      <li>
-                          <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Marketplace</a>
-                      </li>
-                      <li>
-                          <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Features</a>
-                      </li>
-                      <li>
-                          <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Team</a>
-                      </li>
-                      <li>
-                          <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
-                      </li>
+                        <a id="admin-link" href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
+                            Admin
+                        </a>
+                    </li>
+                    
+                     
                   </ul>
               </div>
           </div>
@@ -161,7 +153,7 @@
                   <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">View Ticket</h5>
               </a>
               <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Quickly view your ticket details and journey information here.</p>
-              <a data-modal-target="view-tickets-modal" data-modal-toggle="view-tickets-modal" href="#" onclick="viewTickets('mohdaqib921@gmail.com')" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              <a data-modal-target="view-tickets-modal" data-modal-toggle="view-tickets-modal" href="#" onclick="viewTickets(new URLSearchParams(window.location.search).get('e'))" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                 View
                 <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
@@ -207,7 +199,7 @@
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Update Details</h5>
             </a>
             <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Manage your profile and personal details in one convenient place.</p>
-            <a data-modal-target="update-modal" onclick="openUpdateModal('mohdaqib921@gmail.com')" data-modal-toggle="update-modal" href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            <a data-modal-target="update-modal" onclick="openUpdateModal(new URLSearchParams(window.location.search).get('e'))" data-modal-toggle="update-modal" href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                 Update
                 <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
@@ -288,22 +280,27 @@
 <!-- <script src="index.js"></script> -->
 <script>
   const searchTrains = document.getElementById("SearchTrainsForm"); 
-const AllTrains = [
-    {
-        'Boarding': 'Delhi',
-        'Designation': 'Mumbai',
-        'Date':'20-12-2024',
-        'Train':'Jan Shatabdi Express',
-        'Ticket': 500
-    },
-    {
-        'Boarding': 'Delhi',
-        'Designation': 'Goa',
-        'Date':'21-12-2024',
-        'Train':'Rajdhani Express',
-        'Ticket':1000
-    }
-]
+// const AllTrains = [
+//     {
+//         'Boarding': 'Delhi',
+//         'Designation': 'Mumbai',
+//         'Date':'20-12-2024',
+//         'Train':'Jan Shatabdi Express',
+//         'Ticket': 500,
+//         'Class':'AC1',
+//     },
+//     {
+//         'Boarding': 'Delhi',
+//         'Designation': 'Goa',
+//         'Date':'21-12-2024',
+//         'Train':'Rajdhani Express',
+//         'Ticket':1000,
+//         'Class':'Tatkal'
+//     }
+// ]
+
+const AllTrains = JSON.parse(localStorage.getItem('registeredTrains'));
+console.log(AllTrains);
 searchTrains.addEventListener('submit', function(event){
     event.preventDefault();
     const ID = document.getElementById('id').value;
@@ -311,18 +308,19 @@ searchTrains.addEventListener('submit', function(event){
     const age = document.getElementById('age').value;
     const mobile = document.getElementById('mobile').value;
     const boarding = document.getElementById('boaring').value;
+    const date = document.getElementById('date').value;
     const designation = document.getElementById('designation').value;
     const category = document.getElementById('class').value;
     const findTrainsDiv = document.getElementById('findTrains');
     if(ID.trim() == "" || name.trim()=="" || age.trim()=="" || mobile.trim()=="" || boarding.trim()=="" || designation.trim()=="" || category.trim()==""){
         alert("please fill all required details");
     }
-    const trains = AllTrains.filter(item=>{
-        if(item.Boarding.toLocaleLowerCase() == boarding.toLocaleLowerCase() && item.Designation.toLocaleLowerCase() == designation.toLocaleLowerCase() && new Date(item.Date).toDateString() == new Date(date).toDateString()){
+    const trains = Array.isArray(AllTrains) && AllTrains.filter(item=>{
+        if(item.Boarding.toLocaleLowerCase() == boarding.toLocaleLowerCase() && item.Designation.toLocaleLowerCase() == designation.toLocaleLowerCase()){
             return true;
         }
     })
-    console.log(trains);
+    console.log(date);
     if(trains.length>0){
       searchTrains.style.display = 'none';
 
@@ -332,15 +330,16 @@ searchTrains.addEventListener('submit', function(event){
             <h3 class="text-lg font-bold">Train: ${train.Train}</h3>
             <p>Boarding: ${train.Boarding}</p>
             <p>Destination: ${train.Designation}</p>
-            <p>Date: ${train.Date}</p>
+            <p>Date: ${date}</p>
             <p>Ticket Price: ${train.Ticket}</p>
+            <p>Class: ${train.Class}</p>
             <div class="mt-2">
                 <label for="ticketCount-${train.Train}" class="block mb-1 text-sm font-medium text-gray-700 dark:text-gray-400">Number of Tickets</label>
                 <input id="ticketCount-${train.Train}" type="number" min="1" value="1" class="w-16 px-2 py-1 border rounded-lg text-sm" />
             </div>
         </div>
         <div>
-            <button onclick="bookTicket('${train.Train}', '${train.Boarding}', '${train.Designation}', '${train.Date}', '${train.Ticket}', 'mohdaqib921@gmail.com')" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            <button onclick="bookTicket('${train.Train}', '${train.Boarding}', '${train.Designation}', '${date}', '${train.Ticket}','${new URLSearchParams(window.location.search).get('e')}', '${train.Class}')" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                 Book
             </button>
         </div>
@@ -355,7 +354,7 @@ searchTrains.addEventListener('submit', function(event){
 
 })
 
-function bookTicket(train, boarding, destination, date, price, userEmail) {
+function bookTicket(train, boarding, destination, date, price, userEmail,category) {
     const ticketCount = document.getElementById(`ticketCount-${train}`).value;
     
     
@@ -372,7 +371,8 @@ function bookTicket(train, boarding, destination, date, price, userEmail) {
         boarding: boarding,
         destination: destination,
         date: date,
-        price: price,
+        price: price*ticketCount,
+        Class: category,
         ticketCount: ticketCount
     };
     
@@ -391,15 +391,16 @@ function bookTicket(train, boarding, destination, date, price, userEmail) {
     const modal = document.getElementById('authentication-modal');
     if (modal) {
         modal.classList.add('hidden'); 
+    }
+    window.location.reload();
+
+
 }
-
-
-
-
 
 </script>
 <script>
   function viewTickets(userEmail) {
+            // console.log(userEmail);
             const modal = document.getElementById('view-tickets-modal');
             const ticketList = document.getElementById('ticket-list');
 
@@ -434,7 +435,7 @@ function bookTicket(train, boarding, destination, date, price, userEmail) {
 //     modal.classList.add('hidden');
 // }
 
-// Function to delete a ticket
+
 function deleteTicket(ticketIndex, userEmail) {
     let user = JSON.parse(localStorage.getItem(userEmail));
 
@@ -506,10 +507,19 @@ function updateUserInfo(email) {
 // Add event listener for form submission
 document.getElementById('userUpdateForm').addEventListener('submit', function(event) {
     event.preventDefault(); 
-    updateUserInfo('mohdaqib921@gmail.com');
+    updateUserInfo(new URLSearchParams(window.location.search).get('e'));
 });
 
     </script>
+    <script>
+      window.addEventListener('DOMContentLoaded', (event) => {
+          const email = new URLSearchParams(window.location.search).get('e');
+          const adminLink = document.getElementById('admin-link');
+          if (email) {
+              adminLink.href = `admin.html?e=${encodeURIComponent(email)}`;
+          }
+      });
+  </script>
 </body>
 </html>
 

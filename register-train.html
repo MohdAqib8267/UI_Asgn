@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Train</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a id="home-link" href="home.html">TrainVoyage</a></li>
+            <li><a id="admin-link" href="admin.html">Home</a></li>
+            <li><a id="register-train-link" href="register-train.html">Register Train</a></li>
+            <li><a id="profile-link" href="profile.html">Profile</a></li>
+            <li><button onclick="logout()">Logout</button></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Register a Train</h1>
+        <form id="register-train-form">
+            <label for="train-name">Name of Train:</label>
+            <input type="text" id="train-name" required>
+
+            <label for="number-of-seats">Number of Seats:</label>
+            <input type="number" id="number-of-seats" required>
+
+            <label for="from">From:</label>
+            <input type="text" id="from" required>
+
+            <label for="to">To:</label>
+            <input type="text" id="to" required>
+
+            <label for="ownership">Ownership:</label>
+            <input type="text" id="ownership" required>
+
+            <button type="submit" style="background: blue;">Register Train</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const email = new URLSearchParams(window.location.search).get('e');
+            const hm = document.getElementById('home-link');
+            const adm = document.getElementById('admin-link');
+            const pfl = document.getElementById('profile-link');
+            const rtl = document.getElementById('register-train-link');
+            if (email) {
+                hm.href = `home.html?e=${encodeURIComponent(email)}`;
+                adm.href = `admin.html?e=${encodeURIComponent(email)}`;
+                pfl.href = `profile.html?e=${encodeURIComponent(email)}`;
+                rtl.href = `register-train.html?e=${encodeURIComponent(email)}`;
+            }
+        });
+    </script>
+</body>
+</html>
+

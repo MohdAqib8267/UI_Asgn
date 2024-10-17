@@ -35,7 +35,7 @@ loginForm.addEventListener('submit', function(event) {
     const password = document.getElementById('password').value;
     const userDetails = JSON.parse(localStorage.getItem(email));
     if (userDetails && userDetails.email === email && userDetails.password === password) {
-        window.location.href = 'home.html';
+        window.location.href = `home.html?e=${encodeURIComponent(email)}`;
     } else {
         alert("Email or password is incorrect");
     }
